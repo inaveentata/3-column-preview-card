@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+ */
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+
+  section {
+    width: 85vw;
+    max-width: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @media screen and (min-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 920px;
+    }
+    article {
+      text-align: left;
+      padding: 3rem;
+      h1 {
+        font-family: "Big Shoulders Display";
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+        font-size: 2.5rem;
+        margin: 2rem 0;
+      }
+      p {
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 1.5;
+      }
+      button {
+        margin-top: 2rem;
+        text-transform: capitalize;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        outline: none;
+        font-size: 1rem;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid hsl(0, 0%, 95%);
+          color: hsl(0, 0%, 95%);
+        }
+
+        @media screen and (min-width: 700px) {
+          margin-top: 4.5rem;
+        }
+      }
+    }
+    .card-1 {
+      background-color: hsl(31, 77%, 52%);
+      button {
+        color: hsl(31, 77%, 52%);
+      }
+    }
+    .card-2 {
+      background-color: hsl(184, 100%, 22%);
+      button {
+        color: hsl(184, 100%, 22%);
+      }
+    }
+    .card-3 {
+      background-color: hsl(179, 100%, 13%);
+      button {
+        color: hsl(179, 100%, 13%);
+      }
+    }
+  }
+}
+
+footer {
+    text-align: center;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  padding: 1rem;
+  color: hsl(179, 100%, 13%);
+  a{
+      color: hsl(31, 77%, 52%);
+  }
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p+p{
+        margin-left: 0.8rem;
+    }
+  }
+}

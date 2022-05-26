@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+ */
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+}
+
+main {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+main section {
+  width: 85vw;
+  max-width: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  main section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    max-width: 920px;
+  }
+}
+
+main section article {
+  text-align: left;
+  padding: 3rem;
+}
+
+main section article h1 {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+main section article p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+main section article button {
+  margin-top: 2rem;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  font-size: 1rem;
+}
+
+main section article button:hover {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+@media screen and (min-width: 700px) {
+  main section article button {
+    margin-top: 4.5rem;
+  }
+}
+
+main section .card-1 {
+  background-color: #e38826;
+}
+
+main section .card-1 button {
+  color: #e38826;
+}
+
+main section .card-2 {
+  background-color: #006970;
+}
+
+main section .card-2 button {
+  color: #006970;
+}
+
+main section .card-3 {
+  background-color: #004241;
+}
+
+main section .card-3 button {
+  color: #004241;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1rem;
+  color: #004241;
+}
+
+footer a {
+  color: #e38826;
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer p + p {
+    margin-left: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
