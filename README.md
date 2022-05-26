@@ -26,8 +26,8 @@ Users should be able to:
 Click [here](./Screenshot.png) to see the solution screenshot.
 
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/inaveentata/3-column-preview-card)
+- Live Site URL: [Live site URL](https://3-column-preview-card-26-may-2022.netlify.app/)
 
 ## My process
 
